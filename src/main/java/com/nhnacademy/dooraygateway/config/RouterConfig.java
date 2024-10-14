@@ -12,7 +12,7 @@ public class RouterConfig {
         return builder.routes()
                 .route("accounts-register", r -> r.path("/register").uri("http://localhost:8081/"))
                 .route("accounts", r -> r.path("/accounts/**").uri("http://localhost:8081/"))
-                .route("members", r->r.path("/members/**").uri("http://localhost:8082/"))
+                .route("members", r -> r.path("/members/**").uri("http://localhost:8082/"))
                 .route("tasks", r -> r.path("/projects/**").uri("http://localhost:8082/")).build();
     }
 }
